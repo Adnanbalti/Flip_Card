@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    margin-bottom: 20px;
+    perspective: 1000px; /* To enable 3D transformations */
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card.flip {
+    transform: rotateY(180deg); /* Flip the card */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #444;
+}
